@@ -1,0 +1,1 @@
+{"version":3,"file":"function.js","mappings":";;;;;AAAAA,OAAO,CAACC,GAAG,CAAC,UAAU,CAAC,C","sources":["webpack://site/./src/function.ts"],"sourcesContent":["console.log(\"function\");"],"names":["console","log"],"sourceRoot":""}

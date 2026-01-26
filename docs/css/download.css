@@ -1,0 +1,83 @@
+p {
+  color: #333;
+  margin: 5px 0;
+}
+ul {
+  padding-left: 24px;
+}
+ul li {
+  color: #333;
+  margin: 0;
+}
+section a {
+  color: #333;
+  text-decoration: underline;
+}
+section a:hover {
+  text-decoration: none;
+}
+section:not(#kv) {
+  margin-bottom: 48px;
+}
+section form {
+  display: none;
+}
+section:has(.toggle-btns input[value="comment"]:checked) #contact_comment {
+  display: flex;
+}
+section:has(.toggle-btns input[value="work"]:checked) #contact_work {
+  display: flex;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  color: #333;
+  background-color: #f9f9f9;
+}
+td:first-child {
+  width: 200px;
+  background-color: #ddd;
+}
+@media (max-width: 800px) {
+  table,
+  table thead,
+  table tbody,
+  table th {
+    display: block;
+    width: 100%;
+  }
+  td {
+    display: block;
+  }
+  td:first-child {
+    width: auto;
+  }
+}
+.terms {
+  font-size: 14px;
+  line-height: 1.6;
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 8px;
+  border: 1px solid #ccc;
+  color: #333;
+  background-color: #f9f9f9;
+}
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

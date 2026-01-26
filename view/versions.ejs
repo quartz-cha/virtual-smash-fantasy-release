@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <%- include component/head.ejs %>
+  <link rel="stylesheet" href="<%= rootPath %>css/download.css">
+</head>
+
+<body>
+  <%- include component/header.ejs %>
+  <main>
+    <section id="kv">
+      <div>
+        <h1>バージョン履歴</h1>
+      </div>
+    </section>
+    <section>
+      <button onclick="location.href='https://github.com/quartz-cha/virtual-smash-fantasy-release/releases/download/<%= versionIndex[0].version %>/virtual-smash-fantasy-<%= versionIndex[0].version %>.zip'">最新バージョンをダウンロード(v1.0.0)</button>
+    </section>
+    <section>
+      <% for (var i=0; versionIndex.length > i; i++) { %>
+      <table>
+        <tbody>
+          <tr>
+            <td>バージョン</td>
+            <td><a href="https://github.com/quartz-cha/virtual-smash-fantasy-release/releases/download/<%= versionIndex[i].version %>/virtual-smash-fantasy-<%= versionIndex[i].version %>.zip">virtual-smash-fantasy-<%= versionIndex[i].version %>.zip</a></td>
+          </tr>
+          <tr>
+            <td>リリース日</td>
+            <td><%= versionIndex[i].date %></td>
+          </tr>
+          <tr>
+            <td>更新内容</td>
+            <td><%= versionIndex[i].detail %></td>
+          </tr>
+        </tbody>
+      </table>
+      <% } %>
+    </section>
+  </main>
+  <%- include component/footer.ejs %>
+</body>
+
+</html>

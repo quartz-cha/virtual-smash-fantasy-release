@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <%- include component/head.ejs %>
+    <link rel="stylesheet" href="<%= rootPath %>css/about.css">
+</head>
+
+<body>
+  <%- include component/header.ejs %>
+    <main>
+      <section id="kv">
+        <div>
+          <h1>くぉーつについて</h1>
+          <p>くぉーつって何者なんでしょうか？実在する人？何をしている人？</p>
+          <p>ここでは、公開可能なくぉーつの詳細情報をまとめています。</p>
+        </div>
+        <img src="<%= rootPath %>img/mini-quartz.png">
+      </section>
+      <section id="basic_info">
+        <h2>基本情報</h2>
+        <ul>
+          <li>
+            <ul class="info-list">
+              <li>
+                <dt>名前</dt>
+                <dd>くぉーつ</dd>
+              </li>
+              <li>
+                <dt>年齢</dt>
+                <dd>20代</dd>
+              </li>
+              <li>
+                <dt>性別</dt>
+                <dd>性別はくぉーつ</dd>
+              </li>
+              <li>
+                <dt>職業</dt>
+                <dd>プログラマー系の何か</dd>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="info-list">
+              <li>
+                <dt>生年月日</dt>
+                <dd>XXXX年 12月 16日</dd>
+              </li>
+              <li>
+                <dt>身長</dt>
+                <dd>170cmくらい</dd>
+              </li>
+              <li>
+                <dt>趣味</dt>
+                <dd>お絵描き、ゲーム</dd>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section id="custom_info">
+        <h2>詳細情報</h2>
+        <ul>
+          <li>
+            <ul class="info-list">
+              <li>
+                <dt>好きな食べ物</dt>
+                <dd>お味噌汁、お寿司、ラーメン</dd>
+              </li>
+              <li>
+                <dt>苦手な食べ物</dt>
+                <dd>ゴーヤ、茄子、レバー、鴨肉、生クリーム</dd>
+              </li>
+              <li>
+                <dt>好きなゲーム</dt>
+                <dd>マリオカート、大乱闘スマッシュブラザーズ</dd>
+              </li>
+              <li>
+                <dt>好きな映画</dt>
+                <dd>スターウォーズ、MCU</dd>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="info-list">
+              <li>
+                <dt>好きな漫画</dt>
+                <dd>名探偵コナン、小林さんちのメイドラゴン、のんのんびより</dd>
+              </li>
+              <li>
+                <dt>好きなVtuberさん</dt>
+                <dd>アンジュカトリーナさん、立伝都々さん、湊あくあさん、冥鳴ひまりさん</dd>
+              </li>
+              <li>
+                <dt>その他好きなもの</dt>
+                <dd>レゴブロック、フィギュア、ぬいぐるみ</dd>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <%- include component/footer.ejs %>
+</body>
+
+</html>

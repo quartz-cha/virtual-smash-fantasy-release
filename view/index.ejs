@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <%- include component/head.ejs %>
+  <link rel="stylesheet" href="<%= rootPath %>css/top.css">
+</head>
+
+<body>
+  <%- include component/header.ejs %>
+  <main>
+    <section id="kv">
+      <div>
+        <h1>バーチャルスマッシュファンタジー</h1>
+        <p>くぉーつがつくった対戦アクションゲームです。</p>
+        <p>ダウンロードをしていっぱい遊びましょう。</p>
+      </div>
+      <img src="<%= rootPath %>img/mini-quartz.png">
+    </section>
+    <section>
+      <button onclick="location.href='./download'">今すぐダウンロード</button>
+    </section>
+    <section>
+      <div class="trailer-container">
+        <iframe src="https://www.youtube.com/embed/FB7LVtl4MSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section id="news">
+      <h2>新着情報</h2>
+      <div>
+        <ul>
+          <% for (var i=0; newsIndex.length > i; i++) { %>
+          <li>
+            <a href="./news/<%= newsIndex[i].id %>">
+              <p><%= newsIndex[i].date %></p>
+              <dt><%= newsIndex[i].title %></dt>
+              <dd><%= newsIndex[i].abstruct %></dd>
+            </a>
+          </li>
+          <% } %>
+        </ul>
+      </div>
+      <a href="./news">お知らせ一覧を見る</a>
+    </section>
+  </main>
+  <%- include component/footer.ejs %>
+  <script src="function.js"></script>
+</body>
+
+</html>

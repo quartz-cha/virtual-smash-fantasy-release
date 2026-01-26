@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <%- include component/head.ejs %>
+  <link rel="stylesheet" href="<%= rootPath %>css/top.css">
+</head>
+
+<body>
+  <%- include component/header.ejs %>
+  <main>
+    <section id="kv">
+      <div>
+        <h1>お知らせ</h1>
+        <p>過去に投稿された新着情報をまとめて掲載しています。</p>
+        <p>基本的にはサイトの更新情報を掲載予定です。</p>
+      </div>
+      <img src="<%= rootPath %>img/mini-quartz.png">
+    </section>
+    <section id="news">
+      <div>
+        <ul>
+          <% for (var i=0; newsIndex.length > i; i++) { %>
+          <li>
+            <a href="./news/<%= newsIndex[i].id %>">
+              <p><%= newsIndex[i].date %></p>
+              <dt><%= newsIndex[i].title %></dt>
+              <dd><%= newsIndex[i].abstruct %></dd>
+            </a>
+          </li>
+          <% } %>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <%- include component/footer.ejs %>
+</body>
+
+</html>
