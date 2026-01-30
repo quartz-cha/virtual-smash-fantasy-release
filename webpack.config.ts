@@ -124,6 +124,10 @@ module.exports = async () => {
           {
             from: "./static/img",
             to: path.join(outdir, "img")
+          },
+          {
+            from: "./static/game-assets",
+            to: path.join(outdir, "game-assets")
           }
         ]
       }),
