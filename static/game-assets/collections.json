@@ -1,7 +1,8 @@
 {
   "collections": [
     {
-      "id": "beta-gift"
+      "id": "beta-gift",
+      "label": "ベータ版ダウンロード特典"
     }
   ]
 }
