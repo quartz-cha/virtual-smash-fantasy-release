@@ -43,6 +43,12 @@ const htmlPlugins: {title: string, filename: string, template: string, rootPath:
     rootPath: "./"
   },
   {
+    title: "お問い合わせ",
+    filename: "contact.html",
+    template: "contact.ejs",
+    rootPath: "./"
+  },
+  {
     title: "お知らせ",
     filename: "news.html",
     template: "news.ejs",
