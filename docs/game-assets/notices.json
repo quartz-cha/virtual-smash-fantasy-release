@@ -1,13 +1,4 @@
 {
   "notices": [
-    {
-      "id": "notice_001",
-      "title": "配信期間前です",
-      "body": "配信が開始されるまで、今しばらくお待ちください。",
-      "targetVersions": [
-      ],
-      "blockGameStart": true,
-      "hideAfterRead": false
-    }
   ]
 }
