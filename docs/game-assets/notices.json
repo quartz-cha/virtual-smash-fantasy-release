@@ -5,7 +5,6 @@
       "title": "配信期間前です",
       "body": "配信が開始されるまで、今しばらくお待ちください。",
       "targetVersions": [
-        "beta_v1.0.0"
       ],
       "blockGameStart": true,
       "hideAfterRead": false
