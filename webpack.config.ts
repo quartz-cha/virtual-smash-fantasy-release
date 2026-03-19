@@ -4,6 +4,7 @@ import path from "path";
 import * as tagIndex from './static/data/tag';
 import * as newsIndex from './static/data/news';
 import * as versionIndex from './static/data/versions';
+import * as bugIndex from './static/data/bugs';
 
 const viewdir = path.resolve(__dirname, "view");
 const outdir = path.resolve(__dirname, 'docs');
@@ -46,7 +47,10 @@ const htmlPlugins: {title: string, filename: string, template: string, rootPath:
     title: "お問い合わせ",
     filename: "contact.html",
     template: "contact.ejs",
-    rootPath: "./"
+    rootPath: "./",
+    params: {
+      bugIndex: bugIndex.index
+    }
   },
   {
     title: "お知らせ",
@@ -145,7 +149,7 @@ module.exports = async () => {
           templateParameters: {
             pageTitle: htmlPlugin.title,
             rootPath: htmlPlugin.rootPath,
-            ...htmlPlugin.params
+            ...(htmlPlugin.params || {})
           }
         })
       })

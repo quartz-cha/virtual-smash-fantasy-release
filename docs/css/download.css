@@ -28,38 +28,6 @@ section:has(.toggle-btns input[value="comment"]:checked) #contact_comment {
 section:has(.toggle-btns input[value="work"]:checked) #contact_work {
   display: flex;
 }
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-th, td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: left;
-  color: #333;
-  background-color: #f9f9f9;
-}
-td:first-child {
-  width: 200px;
-  background-color: #ddd;
-}
-@media (max-width: 800px) {
-  table,
-  table thead,
-  table tbody,
-  table th {
-    display: block;
-    width: 100%;
-  }
-  td {
-    display: block;
-  }
-  td:first-child {
-    width: auto;
-  }
-}
 .terms {
   font-size: 14px;
   line-height: 1.6;

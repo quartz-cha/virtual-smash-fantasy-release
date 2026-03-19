@@ -22,6 +22,35 @@
         <button class="btn-primary" onclick="location.href='https://forms.gle/ECFbS5zRFyaoq7Uy5'">Googleフォームでお問い合わせ</button>
       </div>
     </section>
+    <section>
+      <h2>報告されたバグ一覧</h2>
+      <% for (var i=0; bugIndex.length > i; i++) { %>
+      <table>
+        <tbody>
+          <tr>
+            <td>報告日</td>
+            <td><%= bugIndex[i].date %></td>
+          </tr>
+          <tr>
+            <td>概要</td>
+            <td><%= bugIndex[i].title %></td>
+          </tr>
+          <tr>
+            <td>詳細</td>
+            <td><%= bugIndex[i].detail %></td>
+          </tr>
+          <tr>
+            <td>回避方法</td>
+            <td><%= bugIndex[i].resolution %></td>
+          </tr>
+          <tr>
+            <td>ステータス</td>
+            <td><%= bugIndex[i].status %></td>
+          </tr>
+        </tbody>
+      </table>
+      <% } %>
+    </section>
   </main>
   <%- include component/footer.ejs %>
 </body>
