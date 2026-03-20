@@ -28,21 +28,19 @@
       <table>
         <tbody>
           <tr>
-            <td>報告日</td>
-            <td><%= bugIndex[i].date %></td>
-          </tr>
-          <tr>
             <td>概要</td>
-            <td><%= bugIndex[i].title %></td>
+            <td><strong><%= bugIndex[i].title %></strong></td>
           </tr>
           <tr>
             <td>詳細</td>
             <td><%= bugIndex[i].detail %></td>
           </tr>
+          <% if (bugIndex[i].resolution) { %>
           <tr>
             <td>回避方法</td>
             <td><%= bugIndex[i].resolution %></td>
           </tr>
+          <% } %>
           <tr>
             <td>ステータス</td>
             <td><%= bugIndex[i].status %></td>
