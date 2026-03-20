@@ -4,7 +4,7 @@ export const index: VersionInfo[] = [
   {
     "version": "v1.2.0",
     "date": "2026/03/20",
-    "detail": "・PS5コントローラーに対応しました。<br>\
+    "detail": "・PS5DualSenseコントローラーに対応しました。<br>\
 ・Nintendo Proコントローラーが正常に接続できない問題を修正しました。<br>\
 ・ステージ背景の空の角度を調整しました。<br>\
 ・スズを右から掴んで掴み打撃をすると、掴み状態が解除される問題を修正しました。<br>\
