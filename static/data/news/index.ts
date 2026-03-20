@@ -1,12 +1,49 @@
 import { News } from "../../../src/types";
-import { abdhiudbcakiici } from "./abdhiudbcakiici";
-import { eryftvgedfwiuofh } from "./eryftvgedfwiuofh";
-import { huuhriehufhiuhsi } from "./huuhriehufhiuhsi";
-import { jufwiejsnjnfoeifje } from "./jufwiejsnjnfoeifje";
 
 export const index: News[] = [
-  huuhriehufhiuhsi,
-  jufwiejsnjnfoeifje,
-  eryftvgedfwiuofh,
-  abdhiudbcakiici
+  {
+    "id": "nfvheiojofwweffew",
+    "date": "2026/03/20",
+    "title": "v1.2.0をリリースしました",
+    "abstruct": "最新のバージョンをリリースしました。ダウンロードページから最新版をダウンロードしてください。",
+    "detail": "最新のバージョンをリリースしました。ダウンロードページから最新版をダウンロードしてください。<br><br><a href=\"../download\">ダウンロードページ</a><br><a href=\"../versions\">更新内容</a>",
+    "tags": [],
+    "files": []
+  },
+  {
+    "id": "huuhriehufhiuhsi",
+    "date": "2026/03/20",
+    "title": "v1.1.0をリリースしました",
+    "abstruct": "最新のバージョンをリリースしました。ダウンロードページから最新版をダウンロードしてください。",
+    "detail": "最新のバージョンをリリースしました。ダウンロードページから最新版をダウンロードしてください。<br><br><a href=\"../download\">ダウンロードページ</a><br><a href=\"../versions\">更新内容</a>",
+    "tags": [],
+    "files": []
+  },
+  {
+    "id": "jufwiejsnjnfoeifje",
+    "date": "2026/03/19",
+    "title": "サービスを開始しました",
+    "abstruct": "本日より、ゲームをプレイできるようになりました。",
+    "detail": "本日より、ゲームをプレイできるようになりました。<br>ダウンロード済みの方は、ゲームを起動すればすぐに遊べます。<br>大乱闘の世界をお楽しみください！",
+    "tags": [],
+    "files": []
+  },
+  {
+    "id": "eryftvgedfwiuofh",
+    "date": "2026/03/09",
+    "title": "v1.0.0をリリースしました",
+    "abstruct": "最初のバージョンをリリースしました。ダウンロードページから最新版をダウンロードしてください。",
+    "detail": "最初のバージョンをリリースしました。ダウンロードページから最新版をダウンロードしてください。<br><br><a href=\"../download\">ダウンロードページ</a><br><a href=\"../versions\">更新内容</a>",
+    "tags": [],
+    "files": []
+  },
+  {
+    "id": "abdhiudbcakiici",
+    "date": "2026/03/09",
+    "title": "ホームページを作成しました",
+    "abstruct": "バーチャルスマッシュファンタジーの公式ホームページを作成しました。",
+    "detail": "バーチャルスマッシュファンタジーの公式ホームページを作成しました。<br>ゲームのダウンロードやお問い合わせなどを行うことができます。",
+    "tags": [],
+    "files": []
+  }
 ];

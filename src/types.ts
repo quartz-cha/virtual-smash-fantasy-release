@@ -28,6 +28,6 @@ export interface Bug {
   "date": string;
   "title": string;
   "detail": string;
-  "status": "いったん諦め" | "調査中" | "修正中" | "次回更新時修正予定";
+  "status": "いったん諦め" | "調査中" | "修正中" | "次回更新時修正予定" | "修正済み";
   "resolution": string;
 }
