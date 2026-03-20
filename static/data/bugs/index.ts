@@ -3,6 +3,13 @@ import { Bug } from "../../../src/types";
 export const index: Bug[] = [
   {
     "date": "2026/03/20",
+    "title": "スズ下必殺技のバグ",
+    "detail": "スズが下必殺技で相手のワザをコピーし、コピー技を発動した時、発動可能カウントが2つ以上減ることがある。",
+    "status": "調査中",
+    "resolution": ""
+  },
+  {
+    "date": "2026/03/20",
     "title": "SwitchProコントローラー接続バグ",
     "detail": "コントローラー接続時、SwitchProコントローラーの指定のボタンを押してもXBoxコントローラーとして認識される。",
     "status": "修正中",
