@@ -29,7 +29,7 @@ section:has(.toggle-btns input[value="work"]:checked) #contact_work {
   display: flex;
 }
 .terms {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.6;
   max-height: 400px;
   overflow-y: auto;

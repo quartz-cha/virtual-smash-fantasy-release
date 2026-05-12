@@ -40,7 +40,7 @@ section#avatar_info > div > img {
   margin-bottom: auto;
 }
 section h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #333;
 }
 section p {
@@ -60,11 +60,11 @@ ul.info-list > li {
 ul.info-list > li > dt {
   width: 30%;
   margin-right: 10px;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #333;
 }
 ul.info-list > li > dd {
   width: 70%;
-  font-size: 16px;
+  font-size: 1rem;
   color: #333;
 }
