@@ -17,8 +17,6 @@ section#news > div > ul {
   flex-direction: column;
   list-style-type: none;
   width: 100%;
-  max-height: 600px;
-  overflow-y: auto;
   margin: 0;
   padding: 0;
 }
@@ -39,18 +37,18 @@ section#news > div > ul > li > a {
   padding: 10px;
 }
 section#news > div > ul > li > a > p {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #333;
   margin: 5px 0;
 }
 section#news > div > ul > li > a > dt {
-  font-size: 16px;
+  font-size: 1rem;
   color: #333;
   font-weight: 600;
   margin: 5px 0;
 }
 section#news > div > ul > li > a > dd {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #333;
   margin: 5px 0;
 }
@@ -58,14 +56,14 @@ section#news > a {
   margin: auto;
   padding: 10px 20px;
   border-radius: 20px;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #333;
   border: 1px solid #333;
 }
 button {
   display: block;
   padding: 12px 24px;
-  font-size: 16px;
+  font-size: 1rem;
   color: #fff;
   background-color: #333;
   border: none;
@@ -75,7 +73,7 @@ button::after {
   content: "";
   display: inline-block;
   margin-left: 8px;
-  font-size: 12px;
+  font-size: 0.75rem;
   border-top: 6px solid #fff;
   border-right: 6px solid transparent;
   transform: translateY(4px);

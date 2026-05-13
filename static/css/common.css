@@ -1,24 +1,36 @@
 html {
   width: 100%;
   background-color: #eee;
+  font-size: 100%;
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 80%;
+  }
 }
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 100%;
   margin: 0;
+  font-size: 1rem;
 }
 button {
   border: 1px solid #333;
   border-radius: 5px;
   padding: 5px;
-  font-size: 14px;
+  font-size: 0.875rem;
   cursor: pointer;
 }
 button.btn-primary {
   display: block;
   margin: 20px auto;
   padding: 12px 24px;
-  font-size: 16px;
+  font-size: 1rem;
   color: #fff;
   background-color: #333;
   border: none;
@@ -195,14 +207,14 @@ header > div#global_menu > div > p {
   color: #333;
   padding: 10px;
   margin: auto 10px 0;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #333;
 }
 h3 {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #333;
 }
 main {
@@ -210,7 +222,7 @@ main {
   min-height: calc(100vh - 70px - 200px - 40px);
   margin: auto;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   main {
     width: calc(100% - 20px);
     padding: 10px;
@@ -228,7 +240,7 @@ footer {
 footer p {
   width: fit-content;
   margin: auto;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #fff;
 }
 footer > section {
@@ -264,7 +276,7 @@ footer > section > ul > li {
 }
 footer > section > ul > li > a {
   padding: 5px;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #fff;
 }
 footer > section > ul > li > a > svg {
@@ -354,7 +366,7 @@ section#kv > img {
 .content-list-notfound > p{
   width: fit-content;
   margin: 100px auto;
-  font-size: 16px;
+  font-size: 1rem;
   color: #333;
 }
 .toggle-body > ul > li {
@@ -402,12 +414,12 @@ section#kv > img {
 }
 .toggle-body > ul > li h3 {
   margin: 10px;
-  font-size: 16px;
+  font-size: 1rem;
   color: #333;
 }
 .toggle-body > ul > li p {
   margin: 10px;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #333;
 }
 .toggle-body > ul > li p.content-text-date {
@@ -425,7 +437,7 @@ ul.content-tags > li {
   border: 1px solid #333;
   border-radius: 20px;
   padding: 4px 8px;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #333;
 }
 .tag-btns {
@@ -446,7 +458,7 @@ ul.content-tags > li {
   display: none;
 }
 .tag-btns label p {
-  font-size: 14px;
+  font-size: 0.875rem;
   margin: 0;
 }
 form {
@@ -461,13 +473,13 @@ form > label {
 }
 form > label > p {
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 1rem;
   color: #333;
 }
 form > label > input[type="text"],
 form > label > textarea {
   padding: 5px;
-  font-size: 14px;
+  font-size: 0.875rem;
   border: 1px solid #333;
   border-radius: 5px;
   font-family: auto;
@@ -540,12 +552,12 @@ ul.feedback-area > li > p {
   margin-bottom: 20px;
 }
 .comment-area .comment-area-header > h2 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   margin: 0 20px 0 0;
 }
 .comment-area .comment-area-header > select {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .comment-input {
   display: flex;
@@ -563,7 +575,7 @@ ul.feedback-area > li > p {
   border: none;
   border-bottom: 1px solid #333;
   background: none;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .comment-input-body > input:focus {
   outline: none;
@@ -580,7 +592,7 @@ ul.feedback-area > li > p {
   border-radius: 15px;
   margin-left: 5px;
   padding: 5px 10px;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .comment-input-body > .comment-input-footer > button:hover,
 .comment-input-body > .comment-input-footer > button:active {
@@ -612,11 +624,11 @@ ul.feedback-area > li > p {
 }
 .comment-area > ul > li > .comment-body > .comment-body-header > p.comment-username {
   margin: 0;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .comment-area > ul > li > .comment-body > .comment-body-header > p.comment-date {
   margin: 0 10px;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #888;
 }
 .comment-area > ul > li > .comment-body > .comment-body-body {
@@ -624,7 +636,7 @@ ul.feedback-area > li > p {
 }
 .comment-area > ul > li > .comment-body > .comment-body-body > p {
   margin: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .comment-area > ul > li > .comment-body > .comment-body-footer {
   margin-top: 10px;
@@ -639,7 +651,7 @@ ul.feedback-area > li > p {
 }
 .comment-area > ul > li > .comment-body > .comment-body-footer > .feedback-area > li > p {
   margin: auto 5px;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 table {
   width: 100%;
@@ -665,6 +677,9 @@ td:first-child {
   table th {
     display: block;
     width: 100%;
+  }
+  tr {
+    display: contents;
   }
   td {
     display: block;
