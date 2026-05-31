@@ -147,8 +147,8 @@ module.exports = async () => {
             to: path.join(outdir, "game-assets")
           },
           {
-            from: "./static/files",
-            to: path.join(outdir, "files")
+            from: "./static/files/sitemap.xml",
+            to: path.join(outdir, "sitemap.xml")
           }
         ]
       }),
