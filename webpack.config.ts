@@ -12,6 +12,13 @@ const outdir = path.resolve(__dirname, 'docs');
 const htmlPlugins: {title: string, filename: string, template: string, rootPath: string, params?: {[key: string]: any}}[] = [
   {
     title: "",
+    filename: "google5abc9e61ea111292.html",
+    template: "google5abc9e61ea111292.ejs",
+    rootPath: "",
+    params: {}
+  },
+  {
+    title: "",
     filename: "index.html",
     template: "index.ejs",
     rootPath: "./",
@@ -138,6 +145,10 @@ module.exports = async () => {
           {
             from: "./static/game-assets",
             to: path.join(outdir, "game-assets")
+          },
+          {
+            from: "./static/files",
+            to: path.join(outdir, "files")
           }
         ]
       }),
@@ -158,7 +169,7 @@ module.exports = async () => {
       historyApiFallback: {
         rewrites: [
           {
-            from: /^(.*)$/, to: (context) => {
+            from: /^(.*)$/, to: (context: { parsedUrl: { pathname: any; }; }) => {
               return `${context.parsedUrl.pathname}.html`;
             }
           }
